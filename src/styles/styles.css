@@ -1,0 +1,80 @@
+
+/* General reset and base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensures the root flex container takes the full height */
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* The main content should expand to fill the available space */
+#content-wrap{
+    padding-bottom: 2.5rem;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #d9534f; /* Reddish color */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border: 1px solid white; /* Border for the box effect */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+    border-color: rgba(255, 255, 255, 0.5); /* Lighter border on hover */
+}
+
+/* Footer styles */
+#footer {
+    background-color: #d9534f; /* Same reddish color */
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Ensures the footer is pushed to the bottom */
+    display: flex; /* Enables flexbox for alignment */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    font-family: 'Arial', sans-serif; /* You can choose any web-safe font or a Google Font */
+    font-size: 1rem; /* Adjust as necessary for size */
+    font-weight: bold; /* Makes the text bold */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    padding: 0 1rem; /* Adds horizontal padding */
+    box-sizing: border-box; /* Ensures padding doesn’t overflow the container */
+}
+
+#footer p {
+    margin: 0; /* Removes default margin of <p> */
+}
