@@ -78,3 +78,70 @@ nav a:hover {
 #footer p {
     margin: 0; /* Removes default margin of <p> */
 }
+
+.newsFeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.newsPost {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    width: 50%;
+    transition: transform 0.3s;
+}
+
+.newsPost:hover {
+    transform: translateY(-10px);
+}
+
+.newsPost h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    display: inline-block;
+}
+
+.newsPost .date {
+    float: right;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.newsPost p {
+    margin: 10px 0 0 0;
+    color: #666;
+}
+
+.newsPost p:last-of-type {
+    margin-top: 15px;
+    color: #444;
+    font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+    .newsFeed {
+        padding: 10px;
+    }
+
+    .newsPost {
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+.notfound{
+    text-align: center;
+}
+
+.notfound a{
+    color: #4d8bff;
+    text-decoration: underline;
+}
